@@ -1,0 +1,35 @@
+    /* الأنماط المضافة مباشرة هنا (يمكن نقلها لـ css/doctor.css) */
+    .container_messages {
+        padding: 30px;
+    }
+    .patient-card {
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+    }
+    .patient-card:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transform: translateY(-3px);
+    }
+    .patient-card h5 {
+        color: #166357;
+    }
+    .unread-badge {
+        background-color: #dc3545; /* لون أحمر للرسائل غير المقروءة */
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.8em;
+    }
+    .btn-chat {
+        background-color: #166357; /* لون أزرق لزر الشات */
+        border-color: #166357;
+    }
+    .btn-chat:hover {
+        background-color:rgb(14, 78, 69);
+        border-color: rgb(14, 78, 69);
+    }

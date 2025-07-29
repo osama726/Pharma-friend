@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "cairo", sans-serif;
+}
+body {
+    background-color:#eaeeed;
+}
+
+/*--------------- start navbar ---------------*/
+.navbar {
+    background-color: #eaeeed;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1000;
+}
+.navbar.scrolled {
+    background-color: #7c9d97c3;
+    box-shadow: 0 4px 8px rgba(92, 116, 112, 0.414);
+}
+.navbar-brand img {
+    width: 180px;
+}
+.navbar-nav a:hover {
+    color: #125b3a;
+}
+
+.main_form{
+    display: flex;
+    width: 550px;
+}
+.main_form input {
+    width: 100%;
+    height: 60px;
+    background-color: #9cd6cd0d;
+    font-size: 15px;
+}
+
+/* تنسيق العناصر داخل النافبار */
+.navbar-nav {
+    justify-content: space-evenly; /* توزيع متساوي بين العناصر */
+    width: 100%;
+}
+
+/* ظهور زر "تلت خطوط" عند تصغير الشاشة */
+@media (max-width: 1200px) {
+    .navbar-nav {
+        text-align: start;
+        padding-right: 10px;
+    }
+    .navbar-nav.show {
+        display: block;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .main_form{
+        display: flex;
+        width: 100%;
+    }
+}
+@media (max-width: 992px){
+    .collapse ul li:not(:last-child) {
+        border-bottom: 1px solid #37615b;
+    }
+}
+
+.nav-link {
+    font-size: larger;
+}
+.btt {
+    background-color: #9CD6CD;
+    border-radius: 8px;
+    border: none;
+    min-width: 60px;
+    height: 60px;
+}
+.btt:hover {
+    background-color: #85aca6;
+    border: 1px solid #125b3a;
+    transition: 0.5s;
+}
+/*--------------- End navbar ---------------*/
+
+
+
+/*--------------- Start button ---------------*/
+.intre {
+    display: flex;
+    gap: 10px; 
+    margin-top: 70px;
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+.intre .btn{
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    direction: left;
+    transition: 0.3s;
+    background-color: rgba(22, 99, 87, 1);
+    color: white;
+    border: 2px solid rgba(22, 99, 87, 1);
+    margin-top: 10px;
+}
+.intre .profile{
+    position: absolute;
+    right: 60px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(22, 99, 87, 1);
+    color: white;
+    border: 2px solid rgba(22, 99, 87, 1);
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.intre .btn-success:hover, .intre .profile:hover{
+    background-color: white;
+    color: rgba(22, 99, 87, 1);
+    border: 2px solid rgba(22, 99, 87, 1);
+}
+
+@media (max-width: 750px){
+    .intre .profile {
+        position: static;
+        margin-left: 60px;
+    }
+    .intre {
+        margin-left: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .intre .btn, .intre .profile {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+    }
+}
+/*--------------- End button ---------------*/
+
+
+
+.background{
+    background-image: url(../images/doc.jpg);
+    position: relative;
+    height: 490px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    opacity: 0.9;
+
+}
+.color{
+    backdrop-filter: blur(2px); 
+    background-color: rgba(132, 223, 209, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+.photo_tiitle {
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: 2px;
+    z-index: 5;
+
+}
+
+
+@media (max-width: 1000px) {
+    .photo_tiitle {
+        font-size: 40px;
+        width: 100%;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
+
+/* Start Message */
+
+/* الأنماط العامة للشات */
+.BOX-CHAT {
+    display: flex;
+    flex-direction: column; /* الرسائل فوق بعض */
+    height: 400px; /* أو ارتفاع مناسب تراه للشات */
+    overflow-y: auto; /* لعمل scroll لما الرسائل تزيد */
+    border: 1px solid #ddd;
+    border-radius: 15px; /* حواف دائرية أكبر */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* خلفية فاتحة لصندوق الشات */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ظل خفيف */
+}
+
+/* نمط الرسالة الواحدة */
+.message {
+    padding: 10px 15px; /* Padding أكبر للرسائل */
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 20px; /* حواف دائرية جداً */
+    width: 50%;
+    word-wrap: break-word; /* عشان النصوص الطويلة ما تبوظش التصميم */
+    line-height: 1.4; /* مسافة بين السطور */
+    font-size: 1.05em; /* حجم خط أكبر للرسائل */
+    position: relative; /* عشان نتحكم في مكان الـ timestamp */
+}
+
+/* نمط رسائل المرسل (أنت) */
+.my-message {
+    background-color: #DCF8C6; /* لون أخضر فاتح (واتساب) */
+    align-self: flex-end; /* لمحاذاة الرسالة لليمين */
+    margin-left: auto; /* يدفع الرسالة لليمين */
+    border-bottom-right-radius: 5px; /* عشان تبان كأنها طالعة من فقاعة */
+}
+
+/* نمط رسائل الطرف الآخر (الدكتور) */
+.other-message {
+    background-color: #EBEBEB; /* لون رمادي فاتح */
+    align-self: flex-start; /* لمحاذاة الرسالة لليسار */
+    margin-right: auto; /* يدفع الرسالة لليسار */
+    border-bottom-left-radius: 5px; /* عشان تبان كأنها طالعة من فقاعة */
+}
+
+/* معلومات المرسل (أنت/الدكتور) ووقت الإرسال */
+.sender-info {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between; /* عشان الاسم والوقت يبقوا على الطرفين */
+    align-items: center;
+}
+
+/* وقت الإرسال */
+.timestamp {
+    font-size: 0.75em;
+    color: #999;
+    /* في الـ sender-info اللي فوق، خليتها justify-content: space-between، فدي هتظبط لوحدها */
+}
+
+/* محتوى الرسالة نفسه */
+.message-content {
+    color: #333;
+}
+
+/* تحسينات لزر الإرسال وحقل الكتابة */
+.SEND-ALL {
+    display: flex;
+    gap: 10px; /* مسافة بين الزر والحقل */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.SEND {
+    flex-grow: 1; /* عشان ياخد أكبر مساحة ممكنة */
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px; /* حواف دائرية */
+    font-size: 1em;
+    outline: none; /* إزالة الحدود عند التركيز */
+}
+
+.SEND:focus {
+    border-color: #28a745; /* لون الحدود عند التركيز */
+    box-shadow: 0 0 0 0.2rem rgba(40,167,69,.25); /* ظل خفيف أخضر */
+}
+
+.BTT {
+    background-color: #28a745; /* لون زر الإرسال */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.BTT:hover {
+    background-color: #218838; /* لون أغمق عند المرور بالماوس */
+}
+
+/* تحسينات للعناصر الأخرى لو محتاج */
+pre {
+    white-space: pre-wrap; /* عشان المعلومات الطبية متخرجش عن الإطار */
+    word-wrap: break-word;
+}
+
+/* End Message */
+
+/* --------------- Start footer ---------------  */
+footer {
+    background: rgba(22, 99, 87, 1);
+    background-image: url(../images/Vector8.svg), url(../images/Vector9.svg);
+    background-size:cover;
+    background-position:1508px 185px  64px 80.43px , 561px 119px 418px 1016px,969px 119px 51.16px;
+    color: white;
+    padding: 20px;
+    direction: ltr;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-content.footer-info {
+    flex: 1;
+    min-width: 250px; 
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.social-info {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.footer-info h3 {
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-info p {
+    margin-top: 120px;
+}
+
+.social-icons{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.social-icons a {
+    color:rgba(255, 255, 255, 1);
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+}
+
+
+.social-icons a:hover {
+    color:#6096dd;
+    transition: 0.3s;
+}

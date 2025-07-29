@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'cairo', sans-serif;
+}
+/* -------------- القسم الرئيسي وجواه كل حاجه (الخلفيه ) -------------- */
+.background{
+    background-color: #9CD6CD;
+    width: auto;
+    height: 490px;
+    position: relative;
+    background-image: radial-gradient(#88cec3c4 2px, transparent 0);
+    background-size: 15px 20px;
+    overflow: hidden;
+}
+/* -------------- القسم الرئيسي وجواه كل حاجه (الخلفيه ) -------------- */
+
+
+/* -------------- start Shapes -------------- */
+.image{
+    position: absolute;
+    left: 77px;
+    background-image: url(../images/a5a88b38f5ff170d1f3eb97e6ea4fc2a.png);
+    width: 565px;
+    height: 490px;
+    background-size: cover;
+    z-index: 2;
+}
+/* -------------- end Shapes -------------- */
+
+
+/* -------------- start paragraph and search -------------- */
+.paragraph{
+    position: absolute;
+    top: 98px;
+    right: 82px;
+    z-index: 4;
+    direction: rtl;
+}
+.tiitle{
+    color: #ffffff;
+    font-size: 50px;
+    width: 700px;
+    height: 204px;
+    font-weight: 800;
+    line-height: 100px;
+    letter-spacing: 2px;
+    /* z-index: 4; */
+
+}
+.description{
+    color: #ffffff;
+    font-size: 16px;
+    width: 420px;
+    height: 60px;
+    font-weight: 400;
+}
+.search{
+    position: absolute;
+    bottom: 50px;
+    right: 82px;
+    width: 528px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    z-index: 4;
+    direction: rtl;
+}
+.button{
+    position: absolute;
+    bottom: 65px;
+    right: 565px;
+    z-index: 4;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+/* -------------- end paragraph and search -------------- */
+
+
+/* -------------- Shapes -------------- */
+.Shape1, .Shape2, .Shape3, .Shape4, .Shape5{
+    position: absolute;
+    z-index: 0;
+}
+
+.Shape1 {
+    top: 79px;
+    right: 170px;
+}
+.Shape2 {
+    /* top: 79px; */
+    right: 0px;
+}
+.Shape3 {
+    top: 200px;
+    left: 0px;
+}
+.Shape4 {
+    top: 150px;
+    right: 0px;
+}
+.Shape5 {
+    top: 250px;
+    left: 0px;
+}
+
+/* -------------- Shapes -------------- */
+
+
+/* -------------- Responsive -------------- */
+@media (max-width: 1000px) {
+    .background {
+        height: auto;
+        padding: 30px 20px;
+        background-size: 20px 25px;
+    }
+    
+    .image {
+        margin-right: auto;
+        position: relative;
+        /* background-size: cover; */
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        left: auto;
+        opacity: 0.6;
+        z-index: 1;
+    }
+
+    .paragraph {
+        position: relative;
+        top: auto;
+        right: auto;
+        z-index: 2;
+        margin-top: -100px;
+    }
+
+    .tiitle {
+      
+        position: absolute;
+        bottom: 50px;
+        font-size: 20px;
+        width: 50%;
+        height: auto;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    .description {
+        position: absolute;
+        bottom: -5px;
+        width: 100%;
+        font-size: 14px;
+        height: auto;
+        /* margin-top: 100px; */
+    }
+
+    .search {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        right: auto;
+        bottom: -5px;
+        font-size: 14px;
+    }
+
+    .button {
+        position: absolute;
+        right: auto;
+        transform: translate(40px, 20px);
+    }
+
+    .wave-lines {
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+        opacity: .5;
+    }
+    .Shape1 {
+        top: 10px;
+        right: 90px;
+        width: 80px;
+        opacity: .7;
+    }
+    .Shape2 {
+        top: 0px;
+        right: -30px;
+        opacity: .7;
+    }
+    .Shape3 {
+        top: 160px;
+        left: -60px;
+        opacity: .7;
+    }
+    .Shape4 {
+        top: 110px;
+        right: -50px;
+        opacity: .7;
+    }
+    .Shape5 {
+        top: 200px;
+        left: 0px;
+        opacity: .7;
+    }
+}
+
+

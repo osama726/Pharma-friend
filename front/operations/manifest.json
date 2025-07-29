@@ -1,0 +1,22 @@
+﻿{
+  "name": "فارما فريند - منبه الدواء",
+  "short_name": "فارما فريند",
+  "start_url": "/pharma_friend/front/alarm_page.php",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#166357",
+  "description": "تطبيق ومنبه لتذكير بمواعيد الأدوية.",
+  "icons": [
+    {
+      "src": "/pharma_friend/front/images/Logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pharma_friend/front/images/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "gcm_sender_id": "103953800507"
+}

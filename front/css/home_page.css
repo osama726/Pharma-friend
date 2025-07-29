@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "cairo", sans-serif;
+}
+body {
+    background-color:#eaeeed;
+}
+
+/*--------------- start navbar ---------------*/
+.navbar {
+    background-color: #eaeeed;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1000;
+}
+.navbar.scrolled {
+    background-color: #7c9d97c3;
+    box-shadow: 0 4px 8px rgba(92, 116, 112, 0.414);
+}
+.navbar-brand img {
+    width: 180px;
+}
+.navbar-nav a:hover {
+    color: #125b3a;
+}
+
+.main_form{
+    display: flex;
+    width: 550px;
+}
+.main_form input {
+    width: 100%;
+    height: 60px;
+    background-color: #9cd6cd0d;
+    font-size: 15px;
+}
+
+/* تنسيق العناصر داخل النافبار */
+.navbar-nav {
+    justify-content: space-evenly; /* توزيع متساوي بين العناصر */
+    width: 100%;
+}
+
+/* ظهور زر "تلت خطوط" عند تصغير الشاشة */
+@media (max-width: 1200px) {
+    .navbar-nav {
+        text-align: start;
+        padding-right: 10px;
+    }
+    .navbar-nav.show {
+        display: block;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .main_form{
+        display: flex;
+        width: 100%;
+    }
+}
+@media (max-width: 992px){
+    .collapse ul li:not(:last-child) {
+        border-bottom: 1px solid #37615b;
+    }
+}
+
+.nav-link {
+    font-size: larger;
+}
+.btt {
+    background-color: #9CD6CD;
+    border-radius: 8px;
+    border: none;
+    min-width: 60px;
+    height: 60px;
+}
+.btt:hover {
+    
+    background-color: #85aca6;
+    border: 1px solid #125b3a;
+    transition: 0.5s;
+}
+/*--------------- End navbar ---------------*/
+
+
+
+.int {
+    display: flex;
+    justify-content: left;
+    gap: 10px; 
+    margin-top: 70px;
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+.int .btn{
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    direction: left;
+    transition: 0.3s;
+    background-color: rgba(22, 99, 87, 1);
+    color: white;
+    border: 2px solid rgba(22, 99, 87, 1);
+    margin-top: 10px;
+}
+.int .profile{
+    position: absolute;
+    right: 60px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(22, 99, 87, 1);
+    color: white;
+    border: 2px solid rgba(22, 99, 87, 1);
+    margin-top: 10px;
+}
+
+.int .btn-success:hover, .int .profile:hover{
+    background-color: white;
+    color: rgba(22, 99, 87, 1);
+    border: 2px solid rgba(22, 99, 87, 1);
+}
+
+@media (max-width: 750px){
+    .int .profile {
+        position: static;
+        margin-left: 60px;
+    }
+    .int {
+        margin-left: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .int .btn, .int .profile {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+    }
+}
+/*--------------- End button ---------------*/
+
+/* نهايه حقلين التسجيل */
+
+.title111{
+    text-align: center;
+    padding-top: 40PX;
+    padding-bottom: 20PX;
+    color: #166357;
+    font-size: 32PX;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: #fff;
+    width: 15.25em;
+    box-shadow: 0PX 5px 90px 10px  #9cd6cd;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 15px;
+    transition: 0.7s ease;
+    height: 299PX;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+}
+.card .icon {
+    color: black;
+    text-align:center;
+}
+
+.card .info {
+    margin-top: 15px;
+    text-align:center;
+}
+/* الcardsالخخاصه بيها */
+
+/* نهايه الاستايلات المرتبطه ب لماذا فارما فريند */
+
+
+
+.title21{
+    text-align: center;
+    color: #166357;
+    padding-top: 95px;
+}
+.title212{
+    text-align: center;
+    color: #393e3d;
+    padding-top: 15PX;
+}
+/* نهايه التيكست اللي بعد كده */
+
+
+
+.projects {
+    direction: rtl;
+    background-color:#eaeeed;
+}
+.projects .content{
+    margin-top: 40px;
+}
+.project-card {
+   /* border: .5px solid #9a9797; */
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    /* border-radius: 40px; */
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project-card:hover {
+    transform: scale(1.1);
+ }
+.project-image img{
+    border-radius: 20px;
+}
+.illnesses{list-style-type:disc ;
+    padding-right: 40px;
+ 
+    
+ }
+.illnesses li::marker{
+     color: #0f4f46;
+     font-size: 30px;
+     
+ } 
+
+.LIALL{
+
+    margin-top: 20px;
+
+}
+
+.LIALL :hover{font-size: 20PX;
+    transition: .5s;
+    
+    }
+a{text-decoration: none;
+color: black;}
+
+/* نهايه سكشن امراض عن بعد */
+
+
+.title2231{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #166357;
+}
+@media (min-width: 350px) and (max-width: 1000px){
+    .title2231{
+    margin-top: 1200px;
+    } 
+}
+@media (min-width: 1001px) and (max-width: 1100px){
+    .title2231{
+    margin-top: 600px;
+    } 
+}
+@media (min-width: 801px) and (max-width: 950px){
+    .title2231{
+    margin-top: 600px;
+    } 
+}
+
+
+
+@media (min-width:1150px) and (max-width:1300px){
+    .title2231{
+    margin-top: 600px;
+    } 
+}
+@media (min-width:1275px) and (max-width:1281px){
+    .title2231{
+    margin-top: 100px;
+    } 
+}
+
+
+
+
+  /* حاوية التمرير الأفقي */
+  .scroll-container {
+    display: flex;            /* صف أفقي */
+    overflow-x: auto;         /* تفعيل التمرير أفقياً */
+    padding: 10px;            /* مسافة داخلية للحاوية */
+    box-sizing: border-box;   /* لحساب الحشو ضمن العرض */
+    scroll-behavior: smooth;  /* تمرير سلس عند النقر على أسهم أو برمجيّاً */
+    direction: rtl;
+  }
+  /* كل عنصر بعرض ثابت 400px */
+  .item {
+    flex: 0 0 350px;          /* لا ينكمش، ولا يتمدد، عرض ثابت 400px */
+          /* ارتفاع تجريبي */
+        
+    border: 2px solid #3b9e94;   /* إطار بسيط حول العنصر */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(
+  45deg,
+  rgb(176, 180, 179) 0%,
+  rgb(165, 197, 192) 50%,
+  rgb(207, 231, 230) 100%
+);
+margin: 20px;
+
+  }
+
+  /* إخفاء شريط التمرير الافتراضي في بعض المتصفحات (اختياري) */
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+  }
+  .iconn{display: block;
+margin-top: -160px;}
+.infoo{
+    margin-top: 100px;
+margin-right: -50px;
+}
+
+/* نهايه خدماتنا */
+
+
+
+
+
+
+
+
+.title2 {
+    padding-top: 35px;
+    color: #166357;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-right: 13%;
+}
+.Ttitle{
+    margin-right: 13%;
+    font-size: 20PX;
+    max-width: 340PX;
+    padding: 35px;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+.coma{
+  
+    text-align: left;
+    font-size: 40PX;
+    color: #0f4f46;
+    /* margin-top: -40px; */
+}
+/* نهايه التعليقات */
+
+
+
+
+/* --------------- Start footer ---------------  */
+footer {
+    background: rgba(22, 99, 87, 1);
+    background-image: url(../images/Vector8.svg), url(../images/Vector9.svg);
+    background-size:cover;
+    background-position: 1508px 185px  64px 80.43px , 561px 119px 418px 1016px,969px 119px 51.16px;
+    color: white;
+    padding: 20px;
+    direction: ltr;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-content.footer-info {
+    flex: 1;
+    min-width: 250px; 
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.social-info {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.footer-info h3 {
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-info p {
+    margin-top: 120px;
+}
+
+.social-icons{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.social-icons a {
+    color:rgba(255, 255, 255, 1);
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+}
+
+
+.social-icons a:hover {
+    color:#6096dd;
+    transition: 0.3s;
+}

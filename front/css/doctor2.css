@@ -1,0 +1,233 @@
+.card {
+ border: none;
+ box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
+ border-radius: 20px;
+}
+h1{
+    padding-top: 100PX;
+    padding-bottom: 100PX;
+}
+.card-titlee{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+.card-body {
+ background-color: #ffffff;
+ padding: 20px;
+ border-radius: 20px;
+ height: 180px;
+}
+.card-text{
+    padding-top: 10px;
+}
+
+h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-success {
+ width: 100%;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    color: #017771 !important;
+}
+
+
+.container .row .col-md-4 .input-group a {
+    padding: 3.20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    bottom: 0;
+    left: 0%;
+    background-color: teal;
+}
+.btn{
+    background-color: #166357;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.btn:hover{
+    border-color: #166357;
+    color: #ededed;
+    background-color: #0d4842;
+
+}
+.btn-outline{
+    background-color: white;
+    color: #ffffff;
+    border-color: #166357;
+}
+.btn-outline:hover{
+    background-color: #166357;
+    color: white;
+}
+
+.container-fluid .row .col-md-12 .text h1 {
+    line-height: 4rem;
+    margin-right: 48px;
+}
+
+.container .search-box  {
+   padding-top: 15%;
+}
+.container .search-box input {
+    width: 30%;
+}
+
+.container-fluid .row .col-md-12 .text .input-group a {
+    padding: 3.20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    bottom: 0;
+    left: 0%;
+    background-color: #166357;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    .container-fluid .row .col-md-12 .text .input-group {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-fluid .row .col-md-12 {
+        height: 35vh;
+    }
+
+    .container-fluid .row .col-md-12 .text h1 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin-right: 30px;
+    }
+
+    .container-fluid .row .col-md-12 .text .input-group {
+        width: 60%;
+    }
+
+    #footer .container .sh {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer .container .sh2 {
+        text-align: center;
+    }
+
+    #map {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid .row .col-md-12 {
+        height: 30vh;
+    }
+
+    .container-fluid .row .col-md-12 .text h1 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .container-fluid .row .col-md-12 .text .input-group {
+        width: 80%;
+        margin: auto;
+    }
+
+    #footer .container .sh2 .data {
+        width: 100%;
+    }
+
+    #map {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid .row .col-md-12 {
+        height: 25vh;
+    }
+
+
+    .container-fluid .row .col-md-12 .text h1 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .container-fluid .row .col-md-12 .text .input-group {
+        width: 90%;
+    }
+
+    .container-fluid .row .col-md-12 .text .input-group input {
+        padding: 2%;
+    }
+
+    .container-fluid .row .col-md-12 .text .input-group a {
+        padding: 2.5%;
+    }
+
+    #footer .container .sh2 .data p {
+        font-size: 0.9rem;
+    }
+
+    #footer .container .sh2 .data a i {
+        font-size: 1rem;
+    }
+
+    #map {
+        height: 40vh;
+    }
+}
+/* Mobile screens (up to 576px) */
+@media (max-width: 546px) {
+    /* Navbar adjustments */
+    .navbar {
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+    }
+  
+    .navbar-nav .nav-item {
+      display: block;
+      width: 100%;
+      color: black;
+    }
+  
+    /* Adjust input search field */
+    .input-group {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .input-group input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .input-group a {
+      position: relative;
+      top: 0;
+      right: 0;
+      text-align: center;
+      width: 100%;
+    }
+}
+

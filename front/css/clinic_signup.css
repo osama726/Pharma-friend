@@ -1,0 +1,92 @@
+  body {
+      font-family: 'CAIRO';
+      margin: 40px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    form {
+      background-color: #f9f9f9;
+        padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .time-group {
+      display: flex;
+      gap: 10px;
+    }
+   .checkbox-group label {
+       align-items: center;
+       display: flex;
+       margin-left:30%;
+       margin-right: 30%;
+       gap: 5px;
+       background-color: #f0f0f0;
+       padding: 5px 10px;
+       border-radius: 6px;
+       cursor: pointer;
+    }
+
+    #address{
+      width: 60%;
+      text-align: right;
+    }
+
+    h2{color: rgba(22, 99, 87, 1);
+    font-size: 39PX;}
+
+    .text{
+      font-size: larger;
+    }
+
+
+    .location-output {
+        width: 80%;
+      margin-top: 20px;
+      font-size: 18px;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid rgba(22, 99, 87, 1);
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+
+    
+    button {
+      padding: 10px;
+      width: 100%;
+      background-color:rgba(22, 99, 87, 1);
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f3f3f3;
+      color: rgba(22, 99, 87, 1);
+      transition: .5s;
+      border: 1PX solid rgba(22, 99, 87, 1);
+    }
+ 

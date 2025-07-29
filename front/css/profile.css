@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "cairo", sans-serif;
+}
+body {
+    /* text-align: right; */
+    background-color: #eaeeed;
+    flex: 1;
+}
+/*--------------- start navbar ---------------*/
+.navbar {
+    background-color: #eaeeed;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1000;
+}
+.navbar.scrolled {
+    background-color: #7c9d97c3;
+    box-shadow: 0 4px 8px rgba(92, 116, 112, 0.414);
+}
+.navbar-brand img {
+    width: 180px;
+}
+.navbar-nav a:hover {
+    color: #125b3a;
+}
+
+.main_form{
+    display: flex;
+    width: 550px;
+}
+.main_form input {
+    width: 100%;
+    height: 60px;
+    background-color: #9cd6cd0d;
+    font-size: 15px;
+}
+
+/* تنسيق العناصر داخل النافبار */
+.navbar-nav {
+    justify-content: space-evenly; /* توزيع متساوي بين العناصر */
+    width: 100%;
+}
+
+/* ظهور زر "تلت خطوط" عند تصغير الشاشة */
+@media (max-width: 1200px) {
+    .navbar-nav {
+        text-align: start;
+        padding-right: 10px;
+    }
+    .navbar-nav.show {
+        display: block;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .main_form{
+        display: flex;
+        width: 100%;
+    }
+}
+@media (max-width: 992px){
+    .collapse ul li:not(:last-child) {
+        border-bottom: 1px solid #37615b;
+    }
+}
+
+.nav-link {
+    font-size: larger;
+}
+.btt {
+    background-color: #9CD6CD;
+    border-radius: 8px;
+    border: none;
+    min-width: 60px;
+    height: 60px;
+}
+.btt:hover {
+    
+    background-color: #85aca6;
+    border: 1px solid #125b3a;
+    transition: 0.5s;
+}
+/*--------------- End navbar ---------------*/
+
+
+.profile-container{
+    direction: rtl;
+}
+.profile-header {
+    margin-top: 100px;
+    background-color: #9cd6cd;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+.profile-section {
+    margin: 30px auto;
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    margin-bottom: 20px;
+}
+.logout-btn {
+    float: left;
+}
+
+.box_messages{
+    display: flex;
+    flex-direction: column; /* الرسائل فوق بعض */
+    height: 400px; /* أو ارتفاع مناسب تراه للشات */
+    overflow-y: auto; /* لعمل scroll لما الرسائل تزيد */
+    padding: 15px;
+}
+.message-card{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+}
+.unread-badge{
+    background-color: #dc3545; /* لون أحمر للرسائل غير المقروءة */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+.btn-chat {
+    background-color: #166357; /* لون أزرق لزر الشات */
+    border-color: #166357;
+}
+.btn-chat:hover {
+    background-color:rgb(14, 78, 69);
+    border-color: rgb(14, 78, 69);
+}
+
+.doctor-card h5 {
+    color: #166357;
+}
+
+
+/* --------------- Start footer ---------------  */
+footer {
+    background: rgba(22, 99, 87, 1);
+    background-image: url(../images/Vector8.svg), url(../images/Vector9.svg);
+    background-size:cover;
+    background-position:1508px 185px  64px 80.43px , 561px 119px 418px 1016px,969px 119px 51.16px;
+    color: white;
+    padding: 20px;
+    direction: ltr;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-content.footer-info {
+    flex: 1;
+    min-width: 250px; 
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.social-info {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.footer-info h3 {
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-info p {
+    margin-top: 120px;
+}
+
+.social-icons{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.social-icons a {
+    color:rgba(255, 255, 255, 1);
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+}
+
+
+.social-icons a:hover {
+    color:#6096dd;
+    transition: 0.3s;
+}

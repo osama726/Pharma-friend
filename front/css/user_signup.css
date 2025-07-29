@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "cairo", sans-serif;
+}
+body {
+        background-color:#eaeeed;
+        text-align: center;
+}  
+
+
+/*--------------- start navbar ---------------*/
+.navbar {
+    background-color: #eaeeed;
+}
+.navbar-brand img {
+    width: 180px;
+}
+.navbar-nav a:hover {
+    color: #125b3a;
+}
+
+.main_form{
+    display: flex;
+    width: 550px;
+}
+.main_form input {
+    width: 100%;
+    height: 60px;
+    background-color: #9cd6cd0d;
+    font-size: 15px;
+}
+
+/* تنسيق العناصر داخل النافبار */
+.navbar-nav {
+    justify-content: space-evenly; /* توزيع متساوي بين العناصر */
+    width: 100%;
+}
+
+/* ظهور زر "تلت خطوط" عند تصغير الشاشة */
+@media (max-width: 1200px) {
+    .navbar-nav {
+        text-align: start;
+        padding-right: 10px;
+    }
+    .navbar-nav.show {
+        display: block;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .main_form{
+        display: flex;
+        width: 100%;
+    }
+}
+@media (max-width: 992px){
+    .collapse ul li:not(:last-child) {
+        border-bottom: 1px solid #37615b;
+    }
+}
+
+.nav-link {
+    font-size: larger;
+}
+.btt {
+    background-color: #9CD6CD;
+    border-radius: 8px;
+    border: none;
+    min-width: 60px;
+    height: 60px;
+}
+.btt:hover {
+    
+    background-color: #85aca6;
+    border: 1px solid #125b3a;
+    transition: 0.5s;
+}
+/*--------------- End navbar ---------------*/
+
+
+
+
+/* --------------- Start form&logo ---------------  */
+.sign-container{
+    background-color: #eaeeed;
+    /* height: 1800px; */
+}
+.img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 0px;
+    background-color: #eaeeed;
+}
+.img img{
+    width: 100%;
+    max-width: 700px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: center;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sin {
+    width: 330px;
+    padding: 10px 40px 10px 10px;
+    margin: 10px 0;
+    border: 1px solid #e6efe6;
+    border-radius: 5px;
+    background: rgba(241, 243, 246, 1);
+    direction: rtl;
+}
+#birthday{
+    text-align: end;
+}
+
+.input-container .pass_icon {
+    position: absolute;
+    left: 0;
+    background-color: rgba(22, 99, 87, 1);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.input-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+}
+.input-container .toggle-password:hover {
+    color: #000;
+}
+
+.buttonm{
+    width: 330px;
+    padding: 10px;
+    background: rgb(22, 99, 87, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.buttonm:hover{
+    background-color: #2b6b58;
+}
+
+.gender-box {
+    display: flex;
+    position: relative;
+    width: 330px;
+    padding: 10px 40px 10px 10px;
+    margin: 10px 0;
+    border: 1px solid #e6efe6;
+    border-radius: 5px;
+    background: rgba(241, 243, 246, 1);
+    direction: rtl;
+    flex-direction:row ;
+}
+.gender-box input[type="radio"] {
+margin-left: 6px; /* مسافة بين الدائرة والنص */
+}
+.trrt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(22, 99, 87, 1);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+p{
+    margin-top: 10px;
+    font-size:18px;
+}
+
+
+
+.a1{
+    text-decoration: none;
+    width: 330px;
+    height: 45px;
+    padding: 10px;
+    background: rgb(22, 99, 87, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: .5s;
+}
+
+.a1:hover{
+    background-color: white;
+    color:  rgba(22, 99, 87, 1);
+    border: #125b3a 1px solid;
+}
+/* --------------- End form&logo ---------------  */
+
+
+
+/* --------------- Start footer ---------------  */
+footer {
+    background: rgba(22, 99, 87, 1);
+    background-image: url(../images/Vector8.svg), url(../images/Vector9.svg);
+    background-size:cover;
+    background-position:1508px 185px  64px 80.43px , 561px 119px 418px 1016px,969px 119px 51.16px;
+    color: white;
+    padding: 20px;
+    direction: ltr;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-content.info {
+    flex: 1;
+    min-width: 250px; 
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.social-info {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.info h3 {
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.social-info p {
+    margin-top: 120px;
+}
+
+.social-icons{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.social-icons a {
+    color:rgba(255, 255, 255, 1);
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+}
+
+
+.social-icons a:hover {
+    color:#6096dd;
+    transition: 0.3s;
+}
