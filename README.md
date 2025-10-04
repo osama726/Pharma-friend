@@ -87,10 +87,3 @@ Once logged in, users can:
 ![Map Section](assets/map.png)
 ![Chat Section](assets/chat2.png)
 
----
-
-## ⚙️ Installation & Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/pharma-friend.git
